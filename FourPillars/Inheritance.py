@@ -40,14 +40,15 @@ class Boat(Vehicle):
         self.sunk = True
         return 'Oh noooo!'
 
-    def firecannons(self):
+    def fire_cannons(self):
         if self.num_of_cannons >= 1:
             return 'FIRE!!!'
         else:
             return 'You have no cannons!'
 #
 # my_truck = Truck('Ford', 'Silver', 7.5, 2019, 18)
-# print(f'Omid has a {my_truck.colour} {my_truck.make} of size {my_truck.engine_size} from {my_truck.year} and trailer size {my_truck.trailer_size}')
+# print(f'Omid has a {my_truck.colour} {my_truck.make} of size {my_truck.engine_size} '
+#       f'from {my_truck.year} and trailer size {my_truck.trailer_size}')
 # for x in range(0, 3):
 #     print(my_truck.accelerate())
 #
@@ -56,9 +57,9 @@ class Boat(Vehicle):
 
 my_boat = Boat('Yamaha', 'blue', 25.6, 2016, 4, 'Unsinkable', 3)
 print(f'Matt has a {my_boat.colour} {my_boat.make} boat called {my_boat.name} of size {my_boat.engine_size} from {my_boat.year} with {my_boat.num_of_sails} sails and {my_boat.num_of_cannons} cannons')
-print(my_boat.firecannons())
+print(my_boat.fire_cannons())
 no_cannon_boat = Boat('Rowboat', 'beige', 0, 1832, 0, 'Smallboat', 0)
-print(no_cannon_boat.firecannons())
+print(no_cannon_boat.fire_cannons())
 print(my_boat.sunk)
 print(my_boat.sink())
 print(my_boat.sunk)
